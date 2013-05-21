@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+  <!-- Screen Design for the Configuration -->
+  <TextView 
+      		android:text="@string/ConfTab_title"
+      		android:id="@+id/ConfTab_title"
+  			android:padding="15sp"
+  			android:textSize="18sp"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"/>
+    <TextView 
+      		android:text="@string/ConfTab_mac"
+  			android:id="@+id/ConfTab_mac"
+  			android:padding="15sp"
+  			android:textSize="18sp"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"/>
+      <TextView 
+      		android:text="@string/ConfTab_alert"
+  			android:padding="15sp"
+  			android:textSize="18sp"
+  			android:layout_width="fill_parent"
+  			android:layout_height="wrap_content"/>
+      <RadioGroup
+  			android:id="@+id/notificationPref" 
+  			android:layout_width="fill_parent" 
+  			android:layout_height="wrap_content"
+  			android:orientation="vertical" >
+  			<RadioButton
+  			    android:id="@+id/radio_voice"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:text="@string/radioOptionVoice"
+  			    android:onClick="onRadioButtonClick"
+  			    android:checked="true"
+  			    />
+  			<RadioButton
+  			    android:id="@+id/radio_tone"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:text="@string/radioOptionTone"
+  			    android:onClick="onRadioButtonClick"
+  			    />
+  			<RadioButton
+  			    android:id="@+id/radio_song"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:text="@string/radioOptionSong"
+  			    android:onClick="onRadioButtonClick"
+  			    />
+  			<RadioButton
+  			    android:id="@+id/radio_vibr"
+  			    android:layout_width="wrap_content"
+  			    android:layout_height="wrap_content"
+  			    android:text="@string/radioOptionVibr"
+  			    android:onClick="onRadioButtonClick"
+  			    />
+      </RadioGroup>
+	
+	
+	
+</LinearLayout>
